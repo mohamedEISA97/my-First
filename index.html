@@ -3,79 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>APEX RISE - اشارة بجوار مرور ابوصوير | ادارة المهندس عبدالحميد ابورشاد</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+<title>سوبر ماركت المصطفى - ابوصوير الهنادي بجوار المصحة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo', Tahoma}
-body{background:#0a0a0a;color:#fff}
-header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.9);backdrop-filter:blur(10px);border-bottom:2px solid #ff6d00;display:flex;justify-content:space-between;align-items:center;padding:12px 18px}
-.logo{font-weight:900;font-size:20px}.logo span{color:#ff6d00}
-.badge{background:#ff6d00;color:#fff;padding:6px 14px;border-radius:30px;font-size:11px;font-weight:900}
-.hero{padding:50px 18px;text-align:center;background:radial-gradient(circle at center, #2a1a00 0%, #0a0a0a 70%)}
-.hero h1{font-size:32px;line-height:1.5;font-weight:900}.hero h1 span{color:#ff6d00;text-shadow:0 0 20px #ff6d0080}
-.hero p{color:#bbb;margin:15px 0 25px;font-size:15px}
-.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn{padding:14px 24px;border-radius:12px;text-decoration:none;font-weight:900;display:inline-flex;align-items:center;gap:8px;transition:.2s}
-.orange{background:#ff6d00;color:#fff;box-shadow:0 8px 25px #ff6d0040}.orange:hover{transform:translateY(-2px)}
-.dark{background:#1a1a1a;color:#fff;border:1px solid #333}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;padding:20px;max-width:1100px;margin:30px auto}
-.s-card{background:#161616;border:1px solid #262626;border-radius:18px;padding:22px;text-align:right}
-.s-card h3{color:#ff6d00;margin-bottom:8px}.s-card p{color:#999;font-size:13px;line-height:1.7}
-.location{max-width:1100px;margin:30px auto;background:linear-gradient(135deg, #151515, #0e0e0e);border-radius:22px;border-top:4px solid #ff6d00;padding:30px 18px;text-align:center}
-.big{font-size:26px;font-weight:900;line-height:1.6}.big span{color:#ff6d00}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:18px;max-width:1100px;margin:auto}
-.g-card{background:#161616;border-radius:16px;overflow:hidden;border:1px solid #222;height:220px;display:flex;align-items:center;justify-content:center;color:#555;font-size:13px}
-.g-card img{width:100%;height:100%;object-fit:cover}
-footer{padding:30px;text-align:center;color:#666;font-size:12px;border-top:1px solid #1a1a1a;margin-top:40px}
-.whats{position:fixed;bottom:20px;left:20px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 8px 20px #0008;z-index:20}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#f8fafc;color:#111}
+.top{background:#16a34a;color:#fff;text-align:center;padding:8px;font-size:13px;font-weight:700}
+header{background:#fff;box-shadow:0 2px 10px #0001;position:sticky;top:0;z-index:20;padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;font-size:22px;color:#16a34a}.logo span{color:#111}
+.phone{background:#16a34a;color:#fff;padding:10px 18px;border-radius:30px;text-decoration:none;font-weight:800;font-size:14px}
+.hero{background:linear-gradient(135deg,#16a34a 0%,#15803d 100%);color:#fff;padding:40px 18px;text-align:center}
+.hero h1{font-size:32px;font-weight:900;line-height:1.4}.hero h1 span{background:#fff;color:#16a34a;padding:2px 12px;border-radius:12px}
+.hero p{margin:15px 0 25px;opacity:.95;font-size:15px;line-height:1.7}
+.badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.badge{background:rgba(255,255,255,.2);backdrop-filter:blur(5px);padding:8px 16px;border-radius:30px;font-size:12px;font-weight:700;border:1px solid rgba(255,255,255,.3)}
+.section{max-width:1100px;margin:25px auto;padding:0 14px}
+.h2{font-size:20px;font-weight:900;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.card{background:#fff;border-radius:18px;padding:12px;box-shadow:0 4px 15px #00000008;border:1px solid #eef2f7;text-align:center;transition:.2s}
+.card:hover{transform:translateY(-3px)}
+.card .emoji{font-size:36px;margin:8px 0}
+.card h3{font-size:14px;font-weight:800}.card p{font-size:11px;color:#64748b;margin:4px 0}
+.price{color:#16a34a;font-weight:900;margin-top:6px}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.srv{background:#fff;border-radius:18px;padding:18px;border:1px solid #e2e8f0;display:flex;gap:12px;align-items:center}
+.srv .icon{width:50px;height:50px;background:#f0fdf4;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px}
+.srv h4{font-size:14px;font-weight:800}.srv p{font-size:11px;color:#64748b}
+.loc{background:#111;color:#fff;border-radius:24px;padding:28px 18px;text-align:center;margin-top:30px}
+.loc h2{color:#4ade80;font-size:22px}
+.btns{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:800;display:inline-flex;gap:8px;align-items:center}
+.green{background:#16a34a;color:#fff}.white{background:#fff;color:#111}.dark{background:#222;color:#fff;border:1px solid #333}
+footer{padding:25px;text-align:center;color:#94a3b8;font-size:12px}
+.float{position:fixed;bottom:18px;left:18px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;box-shadow:0 8px 20px #0004;z-index:99}
 </style>
 </head>
 <body>
-
+<div class="top">🔥 متوفر لدينا كل جديد - دفع كاش وفواتير - توصيل سريع داخل ابوصوير 🔥</div>
 <header>
-<div class="logo">APEX <span>RISE</span></div>
-<div class="badge">اشارة - مرور ابوصوير</div>
+<div class="logo">المصطفى <span>ماركت</span></div>
+<a class="phone" href="tel:01023381723">📞 01023381723</a>
 </header>
 
 <div class="hero">
-<h1>اشارة بجوار مرور ابوصوير<br><span>ادارة المهندس عبدالحميد ابورشاد</span></h1>
-<p>APEX RISE - متخصصون في الهياكل المعدنية - تركيب المصانع - شبكات المواسير الستانلس</p>
-<div class="btns">
-<a class="btn orange" href="https://wa.me/201023148998">💬 واتساب: 01023148998</a>
-<a class="btn dark" href="tel:01023148998">📞 اتصل الآن</a>
+<h1>سوبر ماركت <span>المصطفى</span></h1>
+<p>ابوصوير - ابوخروع - الهنادي - بجوار المصحة<br>كل احتياجات بيتك موجودة - أسعار على قد الإيد</p>
+<div class="badges">
+<div class="badge">💵 دفع كاش</div>
+<div class="badge">🧾 دفع فواتير</div>
+<div class="badge">🆕 كل جديد يوميا</div>
+<div class="badge">🚚 توصيل سريع</div>
 </div>
 </div>
 
+<div class="section">
+<div class="h2">🛒 أقسامنا</div>
+<div class="grid">
+<div class="card"><div class="emoji">🥛</div><h3>ألبان وجبن</h3><p>لبن - جبنة - زبادي</p><div class="price">طازة يوميا</div></div>
+<div class="card"><div class="emoji">🍞</div><h3>مخبوزات</h3><p>عيش - فينو - باتيه</p><div class="price">سخن</div></div>
+<div class="card"><div class="emoji">🥤</div><h3>مشروبات</h3><p>مياه - عصائر - بيبسي</p><div class="price">مثلج</div></div>
+<div class="card"><div class="emoji">🧴</div><h3>منظفات</h3><p>صابون - شامبو - كلور</p><div class="price">أصلي</div></div>
+<div class="card"><div class="emoji">🍫</div><h3>حلويات</h3><p>شيبسي - بسكوت - شيكولاتة</p><div class="price">كل الأنواع</div></div>
+<div class="card"><div class="emoji">🥫</div><h3>بقالة</h3><p>زيت - سكر - رز - مكرونة</p><div class="price">جملة وقطاعي</div></div>
+</div>
+</div>
+
+<div class="section">
+<div class="h2">💳 خدماتنا المميزة</div>
 <div class="services">
-<div class="s-card"><h3>🏗️ هياكل معدنية</h3><p>تصنيع وتركيب جميع أنواع الهياكل المعدنية للمصانع والمخازن بجودة عالية</p></div>
-<div class="s-card"><h3>🏭 تركيب مصانع</h3><p>تجهيز وتركيب خطوط الإنتاج والمصانع من الألف للياء</p></div>
-<div class="s-card"><h3>🔧 ستانلس ستيل</h3><p>شبكات مواسير وتانكات ستانلس غذائي وصناعي مطابق للمواصفات</p></div>
-</div>
-
-<div class="location">
-<h2 style="color:#ff6d00;margin-bottom:15px">📍 عنواننا المميز</h2>
-<p class="big">اشارة بجوار مرور ابوصوير<br><span>ادارة المهندس عبدالحميد ابورشاد</span></p>
-<p style="margin:15px 0;color:#aaa">ابوصوير - الإسماعيلية - مصر</p>
-<div class="btns" style="margin-top:20px">
-<a class="btn orange" href="https://maps.google.com/?q=مرور ابوصوير الاسماعيلية" target="_blank">🗺️ افتح الخريطة</a>
+<div class="srv"><div class="icon">💵</div><div><h4>دفع كاش</h4><p>تقدر تدفع كاش عند الاستلام</p></div></div>
+<div class="srv"><div class="icon">🧾</div><div><h4>دفع فواتيرك</h4><p>كهرباء - مياه - غاز - شحن - انترنت</p></div></div>
+<div class="srv"><div class="icon">📱</div><div><h4>شحن رصيد</h4><p>فودافون - اتصالات - أورنج - وي</p></div></div>
+<div class="srv"><div class="icon">🆕</div><div><h4>كل جديد</h4><p>منتجات جديدة بتوصل يوميا</p></div></div>
 </div>
 </div>
 
-<div class="gallery">
-<div class="g-card"><img src="IMG_20250915_140607.jpg" onerror="this.parentElement.innerHTML='ارفع صور شغلك هنا'"></div>
-<div class="g-card">ارفع صور شغلك هنا</div>
-<div class="g-card">ارفع صور شغلك هنا</div>
-<div class="g-card">ارفع صور شغلك هنا</div>
+<div class="section">
+<div class="loc">
+<h2>📍 عنواننا</h2>
+<p style="font-size:18px;font-weight:800;line-height:1.8;margin:12px 0">ابوصوير - ابوخروع<br>الهنادي - بجوار المصحة</p>
+<p style="color:#94a3b8;font-size:13px">فاتحين يوميا من 7 الصبح لـ 12 بليل</p>
+<div class="btns">
+<a class="btn green" href="https://wa.me/201023381723?text=السلام عليكم سوبر ماركت المصطفى عايز اطلب" target="_blank">💬 اطلب واتساب</a>
+<a class="btn white" href="tel:01023381723">📞 اتصل بنا</a>
+<a class="btn dark" href="https://maps.google.com/?q=ابوصوير ابوخروع الهنادي بجوار المصحة" target="_blank">🗺️ الخريطة</a>
+</div>
+</div>
 </div>
 
 <footer>
-<strong style="color:#fff">APEX RISE - ابكس رايس</strong><br><br>
-اشارة بجوار مرور ابوصوير - ادارة المهندس عبدالحميد ابورشاد<br>
-01023148998 | ابوصوير - الاسماعيلية<br><br>
-© 2026 جميع الحقوق محفوظة
+<strong style="color:#111;font-size:14px">سوبر ماركت المصطفى</strong><br><br>
+ابوصوير - ابوخروع - الهنادي - بجوار المصحة<br>
+01023381723<br><br>
+© 2026 - دفع كاش - دفع فواتير - كل جديد متوفر
 </footer>
 
-<a class="whats" href="https://wa.me/201023148998">💬</a>
-
+<a class="float" href="https://wa.me/201023381723">💬</a>
 </body>
 </html>
